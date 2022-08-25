@@ -7,13 +7,21 @@ class Store {
         this.commit = this.commit.bind(this);
         this.dispatch = this.dispatch.bind(this);
         this.options = options;
+        this.getters = {};
 
         const computed = {};
         const state = options.state;
+        const store = this;
         Object.entries(options.getters).forEach(([key, fun]) => {
             computed[key] = function() {
                 return fun(state);
             };
+
+            Object.defineProperty(this.getters, key, {
+                get() {
+                    return store._vm[key];
+                }
+            });
         });
         this._vm = new Vue({
             data() {
