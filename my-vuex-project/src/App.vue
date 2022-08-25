@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <div>{{$store.state.count}}</div>
-    <div>{{$store.state.doubleCount}}</div>
+    <div>{{$store.getters.doubleCount}}</div>
     <button @click="addCount">add</button>
     
     <button @click="asyncAddCount">async add</button>

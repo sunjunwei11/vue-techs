@@ -3247,9 +3247,8 @@
   "resolved" "https://registry.npmmirror.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   "version" "1.0.1"
 
-"gapj-vuex@^1.0.0":
-  "integrity" "sha512-X280skN34wUk9NSNE4y6hbef450xYxJ0Krsf7Xo8CkdYH8KgEaWoJYe4OnHWWreCCzvcNrqY0ZX1w+tO3ep8Kg=="
-  "resolved" "https://registry.npmjs.org/gapj-vuex/-/gapj-vuex-1.0.0.tgz"
+"gapj-vuex@file:../gapj-vuex":
+  "resolved" "file:../gapj-vuex"
   "version" "1.0.0"
 
 "gensync@^1.0.0-beta.2":
