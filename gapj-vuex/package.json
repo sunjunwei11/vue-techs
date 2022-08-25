@@ -1,0 +1,12 @@
+{
+  "name": "gapj-vuex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle_cjs.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
