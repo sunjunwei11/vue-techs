@@ -3247,10 +3247,9 @@
   "resolved" "https://registry.npmmirror.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   "version" "1.0.1"
 
-"gapj_vue_router@^1.0.0":
-  "integrity" "sha512-UI6KNtn/vXuen2mvl8Arn5693UweG4SpkzDc/JbFmMm3krouHbzVRRvQSw+pNIEnlJc/Ho+UmmsI7ghjPw93cg=="
-  "resolved" "https://registry.npmjs.org/gapj_vue_router/-/gapj_vue_router-1.0.0.tgz"
-  "version" "1.0.0"
+"gapj_vue_router@file:../../npms/gapj_vue_router":
+  "resolved" "file:../../npms/gapj_vue_router"
+  "version" "1.0.1"
 
 "gensync@^1.0.0-beta.2":
   "integrity" "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg=="
