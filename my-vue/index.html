@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{count}}</p>
+        <p v-text="foo" class="p1"></p>
+        <p v-html="bar"></p>
+        <div>
+            <p>{{foo2}}</p>
+        </div>
+        <button @click="addCount">Add count</button>
+        </br>
+        <input v-model="count"/>
+        <p>{{arr}}</p>
+        <button @click="pushArr">Push Arr</button>
+        <button @click="popArr">Pop Arr</button>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
