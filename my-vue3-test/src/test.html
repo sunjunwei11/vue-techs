@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My test Vue3</title>
+    <script src="./reactive.js"></script>
+    <script>
+        const vue = {
+            createApp(options) {
+                return {
+                    mount(selector) {
+                        const data = reactive(options.setup());
+                        effect(() => {
+                            const el = options.render.call(data);
+                            document.querySelector(selector).innerHTML = '';
+                            document.querySelector(selector).appendChild(el);
+                        })
+
+                        setTimeout(() => {
+                            data.title = 'okkkkkk';
+                        }, 2000);
+
+                        setTimeout(() => {
+                            data.title = 'okkkkkk666';
+                        }, 3000);
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const { createApp } = vue;
+        const app = createApp({
+            setup() {
+                return {
+                    title: '111'
+                }
+            },
+            render() {
+                const el = document.createElement('div');
+                el.innerText = this.title;
+                return el;
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>
+</html>
